@@ -11,7 +11,7 @@ onMounted(()=>{sync();addEventListener('hashchange',sync)})
 onBeforeUnmount(()=>removeEventListener('hashchange',sync))
 </script>
 <template>
-  <div class="shell"><aside><p class="brand">VUE 3 / LAB</p><h1>Package Lab</h1><p class="muted">An independent workspace for testing published Vue packages.</p><div class="side-label">PACKAGES</div><button v-for="item in packages" :key="item.id" class="package" :aria-pressed="selectedPackage === item.id" @click="selectedPackage = item.id; choose(item.scenarios[0].id)"><strong>{{item.name}}</strong><small>{{item.version}} · beta</small></button><a :href="pkg.source">Source repository ↗</a></aside>
+  <div class="shell"><aside><p class="brand">VUE 3 / LAB</p><h1>Package Lab</h1><p class="muted">An independent workspace for testing published Vue packages.</p><div class="side-label">PACKAGES</div><button v-for="item in packages" :key="item.id" class="package" :aria-pressed="selectedPackage === item.id" @click="selectedPackage = item.id; choose(item.scenarios[0].id)"><strong>{{item.name}}</strong><small>{{item.version}} · {{item.status}}</small></button><a :href="pkg.source">Source repository ↗</a></aside>
   <main><header><div><p class="eyebrow">PACKAGE WORKSPACE</p><h2>{{pkg.name}}</h2><p class="muted">{{pkg.npm}} <span class="badge">{{pkg.version}}</span></p></div><a class="outline" :href="pkg.demo">Public demo ↗</a></header>
   <div class="notice"><strong>Independent npm consumer</strong><span> Real registry package · Synthetic data · Vue 3.5.44</span></div>
   <nav aria-label="Test scenarios"><button v-for="item in pkg.scenarios" :key="item.id" :aria-pressed="active===item.id" @click="choose(item.id)">{{item.label}}</button></nav>
