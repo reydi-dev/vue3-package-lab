@@ -9,3 +9,13 @@
 - The first empty-state assertion expected the wrong text; it was corrected to the actual library message. This was a test expectation issue, not a reported package defect.
 - The npm `latest` tag currently also points to this prerelease; package issue [#27](https://github.com/reydi-dev/vue3-smart-datatable/issues/27) tracks it.
 - These are focused checks, not a cross-browser, screen-reader or Nuxt audit. The CSV check verifies a download and filename, not full file contents. The package's own independent consumer checks provide additional coverage.
+
+
+## 2026-11-03 — smart-datatable 0.1.0 stable
+
+- Installed the exact published stable version from npm, keeping the lab a
+  separate consumer without links or aliases. Registry `latest` points to 0.1.0.
+- Build/typecheck and the two Chromium production-preview consumer flows passed
+  locally for this update. The CI result is recorded in the PR.
+- Baseline remains Vue 3.5.44; the beta's cross-browser, accessibility audit and
+  Nuxt limitations still apply.

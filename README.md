@@ -1,6 +1,6 @@
 # Vue 3 Package Lab
 
-A private-to-npm, independent consumer workspace for testing published Vue 3 packages. The first package under test is [`@reydi-dev/vue3-smart-datatable@0.1.0-beta.1`](https://www.npmjs.com/package/@reydi-dev/vue3-smart-datatable); it is installed from npm without source aliases or workspace links. All customer data is synthetic.
+A private-to-npm, independent consumer workspace for testing published Vue 3 packages. The first package under test is [`@reydi-dev/vue3-smart-datatable@0.1.0`](https://www.npmjs.com/package/@reydi-dev/vue3-smart-datatable); it is installed from npm without source aliases or workspace links. All customer data is synthetic.
 
 ## Run locally
 
@@ -22,7 +22,7 @@ Open http://127.0.0.1:4191/. For development use `npm run dev` at http://127.0.0
 - **Slots & actions:** custom cell/action integration.
 - **فارسی / RTL:** localized messages, responsive layout and light/dark theme.
 
-The npm beta currently has both `next` and `latest` tags; the lab pins the exact beta version. See [package issue #27](https://github.com/reydi-dev/vue3-smart-datatable/issues/27).
+The lab pins stable `0.1.0` from npm; the beta remains available under `next`.
 
 ## Checks
 

@@ -11,7 +11,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@reydi-dev/vue3-smart-datatable": "0.1.0-beta.1",
+    "@reydi-dev/vue3-smart-datatable": "0.1.0",
     "vue": "3.5.44"
   },
   "devDependencies": {
